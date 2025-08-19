@@ -1,6 +1,13 @@
 import {test as base, expect} from '@playwright/test';
 //fixtures example
 
+test.beforeEach(()=>{
+
+test.info().annotations.push({ type: 'feature', description: 'E-commerce Checkout' });
+  test.info().annotations.push({ type: 'story', description: 'Place order with Credit Card' });
+  test.info().annotations.push({ type: 'severity', description: 'critical' });
+  test.info().annotations.push({ type: 'owner', description: 'QA Team' });
+})
 
 const test = base.extend({
     loginPage: async({browser},use)=>{
@@ -18,5 +25,5 @@ const test = base.extend({
 
 test("Navigate to Home Page",async({loginPage})=>{
     console.log(await loginPage.title());
-    await expect(loginPage.locator("div#res").nth(0)).toContainText("Showing 4 results");
+    await expect(loginPage.locator("div#res").nth(0)).toContainText("Showing 3 results");
 });

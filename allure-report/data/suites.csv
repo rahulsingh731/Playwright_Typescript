@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","4106","Navigate to Home Page","","Tue Aug 19 23:09:36 IST 2025","passed","Tue Aug 19 23:09:40 IST 2025","","tests/second.spec.js","",""
+"","4066","Login Test using POM","","Tue Aug 19 23:18:38 IST 2025","passed","Tue Aug 19 23:18:42 IST 2025","","tests/pageobj.spec.ts","",""
+"","12230","Basic QA Test","","Tue Aug 19 23:09:36 IST 2025","passed","Tue Aug 19 23:09:48 IST 2025","","tests/first.spec.js","",""

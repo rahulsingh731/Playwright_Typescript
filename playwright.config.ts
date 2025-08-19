@@ -1,7 +1,8 @@
 import { defineConfig } from '@playwright/test';
 
 export default defineConfig({
-  reporter: [['html', { open: 'false' }]],
+  reporter: [['html', { open: 'false' }],
+ ['allure-playwright']],
   //Parallel execution & retries set
   workers: 4,
   fullyParallel: true,
