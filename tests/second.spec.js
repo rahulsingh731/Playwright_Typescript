@@ -18,5 +18,5 @@ const test = base.extend({
 
 test("Navigate to Home Page",async({loginPage})=>{
     console.log(await loginPage.title());
-    await expect(loginPage.locator("div#res").nth(0)).toContainText("Showing 3 results");
+    await expect(loginPage.locator("div#res").nth(0)).toContainText("Showing 4 results");
 });
