@@ -3,7 +3,13 @@ import { defineConfig } from '@playwright/test';
 export default defineConfig({
   reporter: [['html', { open: 'false' }]],
   //Parallel execution & retries set
-  workers: 2,
+  workers: 4,
   fullyParallel: true,
-  retries: 2
+  retries: 2,
+
+  use: {
+    screenshot: 'only-on-failure',
+    video: 'on',
+    trace: 'retain-on-failure'
+  }
 });
