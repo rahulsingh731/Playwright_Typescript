@@ -1,13 +1,6 @@
 import {test as base, expect} from '@playwright/test';
 //fixtures example
 
-test.beforeEach(()=>{
-
-test.info().annotations.push({ type: 'feature', description: 'E-commerce Checkout' });
-  test.info().annotations.push({ type: 'story', description: 'Place order with Credit Card' });
-  test.info().annotations.push({ type: 'severity', description: 'critical' });
-  test.info().annotations.push({ type: 'owner', description: 'QA Team' });
-})
 
 const test = base.extend({
     loginPage: async({browser},use)=>{
